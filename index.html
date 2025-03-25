@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>StockSmart - Smart Investing Starts Here</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="logo">
+                <a href="index.html">
+                    <img src="/svg/logo.svg" class="logo_img" alt="">
+                    <span>StockSmart</span>
+                </a>
+            </div>
+            <nav class="nav">
+                <ul class="nav-list">
+                    <li><a href="#features">Features</a></li>
+                    <li><a href="#how-it-works">How It Works</a></li>
+                    <li><a href="#market-trends">Market Trends</a></li>
+                </ul>
+            </nav>
+            <div class="auth-buttons">
+                <a href="/main/index.html" class="btn btn-primary">Get Started</a>
+            </div>
+            <button class="mobile-menu-btn">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="hero">
+            <div class="container">
+                <div class="hero-content">
+                    <h1>Smart investing starts here</h1>
+                    <p>Access real-time market data, advanced analytics, and expert insights to make informed investment decisions.</p>
+                    <div class="hero-buttons">
+                        <a href="/main/index.html" class="btn btn-outline">Get Started</a>
+                    </div>
+                </div>
+                <div class="hero-image">
+                    <!-- <img src="https://s3.tradingview.com/wall-of-love/7fcb2fb2255b51a93d2bd85dc63277d4.jpeg" alt="Stock market dashboard"> -->
+                </div>
+            </div>
+        </section>
+
+        <!-- Features Section -->
+        <section class="features" id="features">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Why choose StockSmart?</h2>
+                    <p>Our platform provides everything you need to navigate the stock market with confidence.</p>
+                </div>
+                <div class="features-grid">
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i class="fas fa-chart-line"></i>
+                        </div>
+                        <h3>Real-time Data</h3>
+                        <p>Access up-to-the-minute market data and price movements for informed decisions.</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i class="fas fa-chart-bar"></i>
+                        </div>
+                        <h3>Advanced Analytics</h3>
+                        <p>Powerful tools to analyze market trends, stock performance, and potential opportunities.</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i class="fas fa-shield-alt"></i>
+                        </div>
+                        <h3>Risk Management</h3>
+                        <p>Sophisticated risk assessment tools to protect and grow your investment portfolio.</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i class="fas fa-bolt"></i>
+                        </div>
+                        <h3>Instant Alerts</h3>
+                        <p>Get notified about market movements and opportunities that match your criteria.</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i class="fas fa-users"></i>
+                        </div>
+                        <h3>Expert Community</h3>
+                        <p>Connect with experienced investors and learn from their strategies and insights.</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i class="fas fa-chart-pie"></i>
+                        </div>
+                        <h3>Portfolio Tracking</h3>
+                        <p>Monitor your investments in one place with comprehensive performance metrics.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- How It Works Section -->
+        <section class="how-it-works" id="how-it-works">
+            <div class="container">
+                <div class="section-header">
+                    <h2>How it works</h2>
+                    <p>Get started with StockSmart in just a few simple steps.</p>
+                </div>
+                <div class="steps">
+                    <div class="step">
+                        <div class="step-number">1</div>
+                        <h3>Get Started</h3>
+                        <p>Sign up for free and set up your investor profile with your goals and preferences.</p>
+                    </div>
+                    <div class="step">
+                        <div class="step-number">2</div>
+                        <h3>Connect your portfolio</h3>
+                        <p>Link your existing investments or start building a new portfolio from scratch.</p>
+                    </div>
+                    <div class="step">
+                        <div class="step-number">3</div>
+                        <h3>Start investing smarter</h3>
+                        <p>Use our tools and insights to make data-driven investment decisions.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Market Trends Section -->
+        <section class="market-trends" id="market-trends">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Market Trends</h2>
+                    <p>Stay updated with the latest market movements</p>
+                </div>
+                <div class="chart">
+                    <div class="tradingview-widget-container" style="height:100%;width:100%">
+                      <div class="tradingview-widget-container__widget" style="height:calc(100% - 32px);width:100%"></div>
+                        <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-advanced-chart.js" async>
+                          {
+                            "autosize": true,
+                            "symbol": "BSE:SENSEX",
+                            "interval": "D",
+                            "timezone": "Asia/Kolkata",
+                            "theme": "light",
+                            "style": "1",
+                            "locale": "en",
+                            "hide_top_toolbar": true,
+                            "allow_symbol_change": false,
+                            "save_image": false,
+                            "calendar": false,
+                            "hide_volume": true,
+                            "support_host": "https://www.tradingview.com"
+                          }
+                        </script>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA Section -->
+        <section class="cta">
+            <div class="container">
+                <h2>Ready to transform your investment strategy?</h2>
+                <p>Join thousands of investors who are already using StockSmart to achieve their financial goals.</p>
+                <div class="cta-buttons">
+                    <a href="/main/index.html" class="btn btn-primary">Get started for Free</a>
+                </div>
+                <div class="social-proof">
+                    <div class="user-avatars">
+                        <div class="avatar"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTDkWSr1pWiuYPsAHWInOz2wF7vKqWNKlZ1aA&s" alt=""></div>
+                        <div class="avatar"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRULDgjPXy-9fOwJsJzqSHpzq0d321l9iofmA&s" alt=""></div>
+                        <div class="avatar"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSjyAKXfr13ezWgWkAGg8Pj5SY45z6z03GScQ&s" alt=""></div>
+                        <div class="avatar"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTmW2vYe4Qyu_xOPET8sk_1z1SS_dMOOYR1Pw&s" alt=""></div>
+                        <div class="avatar"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTJ1P4ukPnlPy-U2a8IcFla4wEkDNR2-L8fQA&s" alt=""></div>
+                    </div>
+                    <p>Join over 1,000,000+ investors already using our platform</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-top">
+                <div class="footer-logo">
+                    <a href="index.html">
+                        <img src="/svg/logo.svg" class="logo_img" alt="">
+                        <span>StockSmart</span>
+                    </a>
+                </div>
+                <div class="footer-links">
+                    <div class="footer-column">
+                        <a href="/footer/index.html"><h4>Product</h4></a>
+                        <ul>
+                            <li><a href="/footer/index.html">Stocks</a></li>
+                            <li><a href="/footer/index.html">Mutual Funds</a></li>
+                            <li><a href="/footer/index.html">US Stocks</a></li>
+                            <li><a href="/footer/index.html">FDs</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-column">
+                        <a href="/footer/index.html"><h4>Quick Links</h4></a>
+                        <ul>
+                            <li><a href="/calculator/index.html">Calculators</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-column">
+                        <a href="/footer/index.html"><h4>StockSmart</h4></a>
+                        <ul>
+                            <li><a href="/footer/index.html">About Us</a></li>
+                            <li><a href="/footer/index.html">Blog</a></li>
+                            <li><a href="/footer/index.html">Careers</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-column">
+                        <a href="/footer/index.html"><h4>Legal</h4></a>
+                        <ul>
+                            <li><a href="/footer/index.html">Terms</a></li>
+                            <li><a href="/footer/index.html">Privacy</a></li>
+                            <li><a href="/footer/index.html">Cookies</a></li>
+                            <li><a href="/footer/index.html">Licenses</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; <span id="current-year"></span> StockSmart. All rights reserved.</p>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-linkedin"></i></a>
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
